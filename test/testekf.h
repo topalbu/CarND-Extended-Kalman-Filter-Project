@@ -23,6 +23,6 @@ protected:
     // before the destructor).
     virtual void TearDown();
 
-    // The mock bar library shaed by all tests
+    // The mock bar library shared by all tests
     MockEKF m_ekf;
 };
