@@ -171,6 +171,18 @@ int main(int argc, char* argv[]) {
   Tools tools;
   cout << "Accuracy - RMSE:" << endl << tools.CalculateRMSE(estimations, ground_truth) << endl;
 
+  Eigen::VectorXd x_predicted(4);
+  x_predicted << 1, 2, 0.2, 0.4;
+
+  Eigen::MatrixXd Hj(3,4);// = m_ekf.CalculateJacobian(x_predicted);
+  Hj<<0.447214,0.894427,0,0,
+          -0.4,0.2,0,0,
+          0,0,0.447214,0.894427;
+
+    bool flag = (tools.CalculateJacobian(x_predicted) - Hj).norm() < 1e-6;
+    cout<< "is aprox Hj : "<< tools.CalculateJacobian(x_predicted).isApprox(Hj, 1e-4)<<" flag = "<<flag<<endl;
+  cout<<"HJ : "<<Hj<<endl;
+  cout<<"return : "<<tools.CalculateJacobian(x_predicted)<<endl;
   // close files
   if (out_file_.is_open()) {
     out_file_.close();

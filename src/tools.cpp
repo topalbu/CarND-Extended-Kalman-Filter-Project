@@ -49,7 +49,8 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
 
     //calculate the squared root
     rmse = rmse.array().sqrt();
-
+    bool flag =  estimations[0].isApprox(ground_truth[0]);
+    cout<<"flag is "<<flag<<endl;
     //return the result
     return rmse;
 }
@@ -59,7 +60,7 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
    \param x_state robot state as 4-d vector
    \return Jacobian Maxtix as 3x4 matrix
 */
-MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
+MatrixXd Tools::CalculateJacobian(const VectorXd &x_state) {
     MatrixXd Hj(3,4);
     //recover state parameters
     float px = x_state(0);
