@@ -49,8 +49,7 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
 
     //calculate the squared root
     rmse = rmse.array().sqrt();
-    bool flag =  estimations[0].isApprox(ground_truth[0]);
-    cout<<"flag is "<<flag<<endl;
+    cout << "RMSE" << endl << rmse << endl;
     //return the result
     return rmse;
 }

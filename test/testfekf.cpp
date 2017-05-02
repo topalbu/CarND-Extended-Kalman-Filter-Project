@@ -1,7 +1,7 @@
 #include "tools.h"
 #include "testekf.h"
 
-using ::testing::Return;
+//using ::testing::Return;
 
 EKFTest::EKFTest() {
     // Have qux return true by default
