@@ -2,30 +2,25 @@ project(ExtendedKF)
 
 cmake_minimum_required (VERSION 3.5)
 
-add_definitions(-std=c++0x)
+add_definitions(-std=c++11)
+
+set(CXX_FLAGS "-Wall")
+set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
+
+set(sources src/main.cpp src/tools.cpp src/FusionEKF.cpp src/kalman_filter.cpp)
 
 
-enable_testing()
+if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
 
-add_subdirectory(test)
+include_directories(/usr/local/include)
+include_directories(/usr/local/opt/openssl/include)
+link_directories(/usr/local/lib)
+link_directories(/usr/local/opt/openssl/lib)
+link_directories(/usr/local/Cellar/libuv/1.11.0/lib)
 
-set(ekf_SRCS
-    src/FusionEKF.cpp
-    src/kalman_filter.cpp
-    src/main.cpp
-    src/tools.cpp)
-
-# Declare the library
-add_library(ekf STATIC
-        ${ekf_SRCS}
-        )
-
-# Specify here the include directories exported
-# by this library
-target_include_directories(ekf PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/src
-        )
+endif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
 
 
+add_executable(ExtendedKF ${sources})
 
-add_executable(ExtendedKF ${ekf_SRCS})
+target_link_libraries(ExtendedKF z ssl uv uWS)

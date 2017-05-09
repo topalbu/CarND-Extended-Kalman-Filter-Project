@@ -1,0 +1,1 @@
+cmd='/home/burak/clion-2017.1.1/bin/cmake/bin/cmake;-GCodeBlocks - Unix Makefiles;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/gtest/src/gtest'

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libekf.a  CMakeFiles/ekf.dir/src/FusionEKF.cpp.o CMakeFiles/ekf.dir/src/kalman_filter.cpp.o CMakeFiles/ekf.dir/src/main.cpp.o CMakeFiles/ekf.dir/src/tools.cpp.o
+/usr/bin/ranlib libekf.a
