@@ -57,57 +57,9 @@ include CMakeFiles/ExtendedKF.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ExtendedKF.dir/flags.make
 
-CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
-CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o: ../src/FusionEKF.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o -c /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp
-
-CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp > CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i
-
-CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp -o CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s
-
-CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires:
-
-.PHONY : CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires
-
-CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides.build
-.PHONY : CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides
-
-CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides.build: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
-
-
-CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
-CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o: ../src/kalman_filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o -c /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp
-
-CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp > CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i
-
-CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp -o CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s
-
-CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires:
-
-.PHONY : CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires
-
-CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides.build
-.PHONY : CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides
-
-CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides.build: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o
-
-
 CMakeFiles/ExtendedKF.dir/src/main.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
 CMakeFiles/ExtendedKF.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ExtendedKF.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ExtendedKF.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/main.cpp.o -c /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/main.cpp
 
 CMakeFiles/ExtendedKF.dir/src/main.cpp.i: cmake_force
@@ -131,7 +83,7 @@ CMakeFiles/ExtendedKF.dir/src/main.cpp.o.provides.build: CMakeFiles/ExtendedKF.d
 
 CMakeFiles/ExtendedKF.dir/src/tools.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
 CMakeFiles/ExtendedKF.dir/src/tools.cpp.o: ../src/tools.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ExtendedKF.dir/src/tools.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExtendedKF.dir/src/tools.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/tools.cpp.o -c /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/tools.cpp
 
 CMakeFiles/ExtendedKF.dir/src/tools.cpp.i: cmake_force
@@ -153,20 +105,68 @@ CMakeFiles/ExtendedKF.dir/src/tools.cpp.o.provides: CMakeFiles/ExtendedKF.dir/sr
 CMakeFiles/ExtendedKF.dir/src/tools.cpp.o.provides.build: CMakeFiles/ExtendedKF.dir/src/tools.cpp.o
 
 
+CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
+CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o: ../src/FusionEKF.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o -c /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp
+
+CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp > CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i
+
+CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp -o CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s
+
+CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires:
+
+.PHONY : CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires
+
+CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides.build
+.PHONY : CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides
+
+CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides.build: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
+
+
+CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
+CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o: ../src/kalman_filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o -c /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp
+
+CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp > CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i
+
+CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp -o CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s
+
+CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires:
+
+.PHONY : CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires
+
+CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides.build
+.PHONY : CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides
+
+CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.provides.build: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o
+
+
 # Object files for target ExtendedKF
 ExtendedKF_OBJECTS = \
-"CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o" \
-"CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o" \
 "CMakeFiles/ExtendedKF.dir/src/main.cpp.o" \
-"CMakeFiles/ExtendedKF.dir/src/tools.cpp.o"
+"CMakeFiles/ExtendedKF.dir/src/tools.cpp.o" \
+"CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o" \
+"CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o"
 
 # External object files for target ExtendedKF
 ExtendedKF_EXTERNAL_OBJECTS =
 
-ExtendedKF: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
-ExtendedKF: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o
 ExtendedKF: CMakeFiles/ExtendedKF.dir/src/main.cpp.o
 ExtendedKF: CMakeFiles/ExtendedKF.dir/src/tools.cpp.o
+ExtendedKF: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
+ExtendedKF: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o
 ExtendedKF: CMakeFiles/ExtendedKF.dir/build.make
 ExtendedKF: CMakeFiles/ExtendedKF.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ExtendedKF"
@@ -177,10 +177,10 @@ CMakeFiles/ExtendedKF.dir/build: ExtendedKF
 
 .PHONY : CMakeFiles/ExtendedKF.dir/build
 
-CMakeFiles/ExtendedKF.dir/requires: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires
-CMakeFiles/ExtendedKF.dir/requires: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires
 CMakeFiles/ExtendedKF.dir/requires: CMakeFiles/ExtendedKF.dir/src/main.cpp.o.requires
 CMakeFiles/ExtendedKF.dir/requires: CMakeFiles/ExtendedKF.dir/src/tools.cpp.o.requires
+CMakeFiles/ExtendedKF.dir/requires: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.requires
+CMakeFiles/ExtendedKF.dir/requires: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o.requires
 
 .PHONY : CMakeFiles/ExtendedKF.dir/requires
 

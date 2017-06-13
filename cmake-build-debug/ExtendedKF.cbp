@@ -5,7 +5,7 @@
 		<Option title="ExtendedKF"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\test\;CMake Files\cmake-build-debug\test\gtest\;CMake Files\cmake-build-debug\test\gtest\tmp\;"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
@@ -17,11 +17,11 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test">
+			<Target title="edit_cache">
 				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,169 +83,30 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ekf">
-				<Option output="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/libekf.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 ekf"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ekf/fast">
-				<Option output="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/libekf.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 ekf/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testekf">
-				<Option output="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/testekf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/gtest/src/gtest/googletest/include"/>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/gtest/src/gtest/googlemock/include"/>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testekf"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testekf/fast">
-				<Option output="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/testekf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/gtest/src/gtest/googletest/include"/>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/gtest/src/gtest/googlemock/include"/>
-					<Add directory="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 testekf/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest">
-				<Option working_dir="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp">
 			<Option target="ExtendedKF"/>
-			<Option target="ekf"/>
 		</Unit>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.h">
 			<Option target="ExtendedKF"/>
-			<Option target="ekf"/>
 		</Unit>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp">
 			<Option target="ExtendedKF"/>
-			<Option target="ekf"/>
 		</Unit>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.h">
 			<Option target="ExtendedKF"/>
-			<Option target="ekf"/>
 		</Unit>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/main.cpp">
 			<Option target="ExtendedKF"/>
-			<Option target="ekf"/>
 		</Unit>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/tools.cpp">
 			<Option target="ExtendedKF"/>
-			<Option target="ekf"/>
 		</Unit>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/src/tools.h">
 			<Option target="ExtendedKF"/>
-			<Option target="ekf"/>
-		</Unit>
-		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/test/main.cpp">
-			<Option target="testekf"/>
-		</Unit>
-		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/test/testfekf.cpp">
-			<Option target="testekf"/>
 		</Unit>
 		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\"/>
-		</Unit>
-		<Unit filename="/home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter-Project/cmake-build-debug/test/gtest/tmp/gtest-cfgcmd.txt.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\test\gtest\tmp\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

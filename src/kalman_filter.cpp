@@ -1,8 +1,10 @@
 #include "kalman_filter.h"
+#include "iostream"
 
+# define M_PI           3.14159265358979323846  /* pi */
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
-
+using namespace std;
 KalmanFilter::KalmanFilter() {}
 
 KalmanFilter::~KalmanFilter() {}
@@ -54,13 +56,21 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
         rho = 0.0001;
     }
 
-    double phi = atan(py/px);
+    double phi = atan2(py,px);
     double rho_dot = (px*vx + py*vy)/rho;
 
     VectorXd z_pred(3);
     z_pred << rho, phi, rho_dot;
 
     VectorXd y = z - z_pred;
+    while (y[1] > M_PI){
+        y[1]-=2*M_PI;
+    }
+
+    while (y[1] < -M_PI) {
+        y[1]+=2*M_PI;
+    }
+
     MatrixXd Ht = H_.transpose();
     MatrixXd S = H_ * P_ * Ht + R_;
     MatrixXd Si = S.inverse();

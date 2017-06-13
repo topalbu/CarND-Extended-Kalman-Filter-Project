@@ -56,16 +56,16 @@ CMAKE_BINARY_DIR = /home/burak/git-ws/kalman_filter/CarND-Extended-Kalman-Filter
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/home/burak/clion-2017.1.1/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/burak/clion-2017.1.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : test/fast
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -77,17 +77,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/burak/clion-2017.1.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -134,45 +123,6 @@ ExtendedKF/fast:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/build
 .PHONY : ExtendedKF/fast
 
-#=============================================================================
-# Target rules for targets named ekf
-
-# Build rule for target.
-ekf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ekf
-.PHONY : ekf
-
-# fast build rule for target.
-ekf/fast:
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/build
-.PHONY : ekf/fast
-
-#=============================================================================
-# Target rules for targets named testekf
-
-# Build rule for target.
-testekf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testekf
-.PHONY : testekf
-
-# fast build rule for target.
-testekf/fast:
-	$(MAKE) -f test/CMakeFiles/testekf.dir/build.make test/CMakeFiles/testekf.dir/build
-.PHONY : testekf/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
 src/FusionEKF.o: src/FusionEKF.cpp.o
 
 .PHONY : src/FusionEKF.o
@@ -180,7 +130,6 @@ src/FusionEKF.o: src/FusionEKF.cpp.o
 # target to build an object file
 src/FusionEKF.cpp.o:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/FusionEKF.cpp.o
 .PHONY : src/FusionEKF.cpp.o
 
 src/FusionEKF.i: src/FusionEKF.cpp.i
@@ -190,7 +139,6 @@ src/FusionEKF.i: src/FusionEKF.cpp.i
 # target to preprocess a source file
 src/FusionEKF.cpp.i:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/FusionEKF.cpp.i
 .PHONY : src/FusionEKF.cpp.i
 
 src/FusionEKF.s: src/FusionEKF.cpp.s
@@ -200,7 +148,6 @@ src/FusionEKF.s: src/FusionEKF.cpp.s
 # target to generate assembly for a file
 src/FusionEKF.cpp.s:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.s
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/FusionEKF.cpp.s
 .PHONY : src/FusionEKF.cpp.s
 
 src/kalman_filter.o: src/kalman_filter.cpp.o
@@ -210,7 +157,6 @@ src/kalman_filter.o: src/kalman_filter.cpp.o
 # target to build an object file
 src/kalman_filter.cpp.o:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/kalman_filter.cpp.o
 .PHONY : src/kalman_filter.cpp.o
 
 src/kalman_filter.i: src/kalman_filter.cpp.i
@@ -220,7 +166,6 @@ src/kalman_filter.i: src/kalman_filter.cpp.i
 # target to preprocess a source file
 src/kalman_filter.cpp.i:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/kalman_filter.cpp.i
 .PHONY : src/kalman_filter.cpp.i
 
 src/kalman_filter.s: src/kalman_filter.cpp.s
@@ -230,7 +175,6 @@ src/kalman_filter.s: src/kalman_filter.cpp.s
 # target to generate assembly for a file
 src/kalman_filter.cpp.s:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.s
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/kalman_filter.cpp.s
 .PHONY : src/kalman_filter.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -240,7 +184,6 @@ src/main.o: src/main.cpp.o
 # target to build an object file
 src/main.cpp.o:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/main.cpp.o
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -250,7 +193,6 @@ src/main.i: src/main.cpp.i
 # target to preprocess a source file
 src/main.cpp.i:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/main.cpp.i
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -260,7 +202,6 @@ src/main.s: src/main.cpp.s
 # target to generate assembly for a file
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/main.cpp.s
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/tools.o: src/tools.cpp.o
@@ -270,7 +211,6 @@ src/tools.o: src/tools.cpp.o
 # target to build an object file
 src/tools.cpp.o:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/tools.cpp.o
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/tools.cpp.o
 .PHONY : src/tools.cpp.o
 
 src/tools.i: src/tools.cpp.i
@@ -280,7 +220,6 @@ src/tools.i: src/tools.cpp.i
 # target to preprocess a source file
 src/tools.cpp.i:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/tools.cpp.i
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/tools.cpp.i
 .PHONY : src/tools.cpp.i
 
 src/tools.s: src/tools.cpp.s
@@ -290,7 +229,6 @@ src/tools.s: src/tools.cpp.s
 # target to generate assembly for a file
 src/tools.cpp.s:
 	$(MAKE) -f CMakeFiles/ExtendedKF.dir/build.make CMakeFiles/ExtendedKF.dir/src/tools.cpp.s
-	$(MAKE) -f CMakeFiles/ekf.dir/build.make CMakeFiles/ekf.dir/src/tools.cpp.s
 .PHONY : src/tools.cpp.s
 
 # Help Target
@@ -299,13 +237,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test"
+	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ExtendedKF"
-	@echo "... edit_cache"
-	@echo "... ekf"
-	@echo "... testekf"
-	@echo "... gtest"
 	@echo "... src/FusionEKF.o"
 	@echo "... src/FusionEKF.i"
 	@echo "... src/FusionEKF.s"
