@@ -50,71 +50,40 @@ OUTPUT: values provided by the c++ program to the simulator
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools]((https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
+  # Extended-Kalman-Filter
 
-## Basic Build Instructions
 
-1. Clone this repo.
-2. Make a build directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make` 
-   * On windows, you may need to run: `cmake .. -G "Unix Makefiles" && make`
-4. Run it: `./ExtendedKF path/to/input.txt path/to/output.txt`. You can find
-   some sample inputs in 'data/'.
-    - eg. `./ExtendedKF ../data/obj_pose-laser-radar-synthetic-input.txt`
+## Results
 
-## Editor Settings
 
-We've purposefully kept editor configuration files out of this repo in order to
-keep it as simple and environment agnostic as possible. However, we recommend
-using the following settings:
+| Input file 1  | Input file 2  |
+| ------------- |:-------------|
+| ![](docs/txt1_estimates.png)    | ![](docs/txt2_estimates.png) |
 
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
+### DataSet 1 
 
-## Code Style
+| DataSet 1 - Radar       | RMSE                                                      |
+| -------------------------- |:----------------------------------------------------------|
+| ![radar1](docs/radar1.png) | px=0.230186<br>py=0.346434<br>vx=0.5835<br>vy=0.80404  |
 
-Please (do your best to) stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
+| DataSet 1 - Lidar       | RMSE                                                      |
+| -------------------------- |:----------------------------------------------------------|
+| ![lidar1](docs/lidar1.png) | px=0.147296<br>py=0.115293<br>vx=0.638337<br>vy=0.534584|
 
-## Generating Additional Data
+| DataSet 1 - Fused       | RMSE                                                      |
+| -------------------------- |:----------------------------------------------------------|
+| ![radar+lidar1](docs/radar+lidar1.png)     | px=0.0973178<br>py=0.0854597<br>vx=0.451267<br>vy=0.439935 |
 
-This is optional!
+### DataSet 2 
 
-If you'd like to generate your own radar and lidar data, see the
-[utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
-Matlab scripts that can generate additional data.
+| DataSet 2 - Radar       | RMSE                                                      |
+| -------------------------- |:----------------------------------------------------------|
+| ![radar2](docs/radar2.png) | px=0.268994<br>py=0.384461<br>vx=0.652845<br>vy=0.862943  |
 
-## Project Instructions and Rubric
+| DataSet 2 - Lidar       | RMSE                                                      |
+| -------------------------- |:----------------------------------------------------------|
+| ![lidar2](docs/lidar2.png) | px=0.117035<br>py=0.12619<br>vx=0.650128<br>vy=0.610791|
 
-Note: regardless of the changes you make, your project must be buildable using
-cmake and make!
-
-More information is only accessible by people who are already enrolled in Term 2
-of CarND. If you are enrolled, see [the project resources page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/382ebfd6-1d55-4487-84a5-b6a5a4ba1e47)
-for instructions and the project rubric.
-
-## Hints!
-
-* You don't have to follow this directory structure, but if you do, your work
-  will span all of the .cpp files here. Keep an eye out for TODOs.
-
-## Call for IDE Profiles Pull Requests
-
-Help your fellow students!
-
-We decided to create Makefiles with cmake to keep this project as platform
-agnostic as possible. Similarly, we omitted IDE profiles in order to we ensure
-that students don't feel pressured to use one IDE or another.
-
-However! We'd love to help people get up and running with their IDEs of choice.
-If you've created a profile for an IDE that you think other students would
-appreciate, we'd love to have you add the requisite profile files and
-instructions to ide_profiles/. For example if you wanted to add a VS Code
-profile, you'd add:
-
-* /ide_profiles/vscode/.vscode
-* /ide_profiles/vscode/README.md
-
-The README should explain what the profile does, how to take advantage of it,
-and how to install it.
-
-Regardless of the IDE used, every submitted project must
-still be compilable with cmake and make.
+| DataSet 2 - Fused       | RMSE                                                      |
+| -------------------------- |:----------------------------------------------------------|
+| ![radar+lidar2](docs/radar+lidar2.png)     | px=0.0726207<br>py=0.096663<br>vx=0.457881<br>vy=0.496596 |
