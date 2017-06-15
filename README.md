@@ -55,35 +55,30 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ## Results
 
-
-| Input file 1  | Input file 2  |
-| ------------- |:-------------|
-| ![](docs/txt1_estimates.png)    | ![](docs/txt2_estimates.png) |
-
 ### DataSet 1 
 
 | DataSet 1 - Radar       | RMSE                                                      |
 | -------------------------- |:----------------------------------------------------------|
-| ![radar1](docs/radar1.png) | px=0.230186<br>py=0.346434<br>vx=0.5835<br>vy=0.80404  |
+| ![radar1](Docs/radar1.png) | px=0.230186<br>py=0.346434<br>vx=0.5835<br>vy=0.80404  |
 
 | DataSet 1 - Lidar       | RMSE                                                      |
 | -------------------------- |:----------------------------------------------------------|
-| ![lidar1](docs/lidar1.png) | px=0.147296<br>py=0.115293<br>vx=0.638337<br>vy=0.534584|
+| ![lidar1](Docs/lidar1.png) | px=0.147296<br>py=0.115293<br>vx=0.638337<br>vy=0.534584|
 
 | DataSet 1 - Fused       | RMSE                                                      |
 | -------------------------- |:----------------------------------------------------------|
-| ![radar+lidar1](docs/radar+lidar1.png)     | px=0.0973178<br>py=0.0854597<br>vx=0.451267<br>vy=0.439935 |
+| ![radar_lidar1](Docs/radar_lidar1.png)     | px=0.0973178<br>py=0.0854597<br>vx=0.451267<br>vy=0.439935 |
 
 ### DataSet 2 
 
 | DataSet 2 - Radar       | RMSE                                                      |
 | -------------------------- |:----------------------------------------------------------|
-| ![radar2](docs/radar2.png) | px=0.268994<br>py=0.384461<br>vx=0.652845<br>vy=0.862943  |
+| ![radar2](Docs/radar2.png) | px=0.268994<br>py=0.384461<br>vx=0.652845<br>vy=0.862943  |
 
 | DataSet 2 - Lidar       | RMSE                                                      |
 | -------------------------- |:----------------------------------------------------------|
-| ![lidar2](docs/lidar2.png) | px=0.117035<br>py=0.12619<br>vx=0.650128<br>vy=0.610791|
+| ![lidar2](Docs/lidar2.png) | px=0.117035<br>py=0.12619<br>vx=0.650128<br>vy=0.610791|
 
 | DataSet 2 - Fused       | RMSE                                                      |
 | -------------------------- |:----------------------------------------------------------|
-| ![radar+lidar2](docs/radar+lidar2.png)     | px=0.0726207<br>py=0.096663<br>vx=0.457881<br>vy=0.496596 |
+| ![radar_lidar2](Docs/radar_lidar2.png)     | px=0.0726207<br>py=0.096663<br>vx=0.457881<br>vy=0.496596 |
